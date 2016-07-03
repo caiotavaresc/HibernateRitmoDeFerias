@@ -17,5 +17,29 @@ public class ReservaPK implements Serializable{
     
     @Column(nullable=false)
     private Calendar dataHora;
+
+    public void setNroIdSala(SalaSquash nroIdSala) {
+        this.nroIdSala = nroIdSala;
+    }
+
+    public void setNroSocio(Socio nroSocio) {
+        this.nroSocio = nroSocio;
+    }
+
+    public void setDataHora(Calendar dataHora) {
+        this.dataHora = dataHora;
+    }
+
+    public SalaSquash getNroIdSala() {
+        return nroIdSala;
+    }
+
+    public Socio getNroSocio() {
+        return nroSocio;
+    }
+
+    public Calendar getDataHora() {
+        return dataHora;
+    }
     
 }

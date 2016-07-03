@@ -22,4 +22,70 @@ public class Socio {
     @JoinTable(name="matricula", joinColumns = @JoinColumn(name="NroSocio"), inverseJoinColumns = @JoinColumn(name="CodigoAula"))
     private Collection<Aula> matriculas;
 
+    public Socio(String _nome, String _endereco, String _telefone, String _profissao, String _dadosBancarios)
+    {
+        this.nome = _nome;
+        this.endereco = _endereco;
+        this.telefone = _telefone;
+        this.profissao = _profissao;
+        this.dadosBancarios = _dadosBancarios;
+        
+    }
+    
+    public void setNroSocio(int nroSocio) {
+        this.nroSocio = nroSocio;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public void setProfissao(String profissao) {
+        this.profissao = profissao;
+    }
+
+    public void setDadosBancarios(String dadosBancarios) {
+        this.dadosBancarios = dadosBancarios;
+    }
+
+    public void setMatriculas(Collection<Aula> matriculas) {
+        this.matriculas = matriculas;
+    }
+
+    public int getNroSocio() {
+        return nroSocio;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public String getProfissao() {
+        return profissao;
+    }
+
+    public String getDadosBancarios() {
+        return dadosBancarios;
+    }
+
+    public Collection<Aula> getMatriculas() {
+        return matriculas;
+    }
+
 }
