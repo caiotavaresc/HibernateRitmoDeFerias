@@ -15,6 +15,11 @@ public class Sala {
     
     @Enumerated(EnumType.ORDINAL)
     private TipoSala tipoSala;
+    
+    public Sala()
+    {
+        //Construtor default não faz nada
+    }
 
     public Sala(int _nroIdSala, double _area, String _localizacao, TipoSala _tipoSala)
     {
